@@ -66,7 +66,7 @@ async function addProduct(name, price) {
 
 // Function to delete a new product
 async function deleteProduct(id) {
-  const response = await fetch('http://localhost:3000/products/' + id, {
+  const response = await fetch('http://34.224.21.89:3000/products' + id, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
@@ -76,5 +76,5 @@ async function deleteProduct(id) {
   return response.json();
 }
 
-// Fetch all products on page load
+// Fetch all products on page loadgit
 fetchProducts();
